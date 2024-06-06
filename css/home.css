@@ -148,10 +148,26 @@ footer p {
     font-style: italic;
 }
 
-@media(max-width: 400px){
+@media(max-width: 560px){
     main section .productos {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 1fr);
+    }
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul li {
+        width: 100%;
+    }
+
+    main section .categorias {
+        flex-direction: column;
+    }
+
+    main section .categorias article {
+        width: 80%;
     }
 }
 
